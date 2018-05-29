@@ -247,7 +247,7 @@ if __name__ == "__main__":
 
 	while True:
 		time.sleep(interval)
-		if check_if_changed(saves, hash=False, screenshot=True):
+		if check_if_changed(saves, use_hash=False, screenshot=True):
 			saves = get_all_saves(dirs)
 			backups = get_all_backups(dirs)
 			delete_old_backups(backups)
